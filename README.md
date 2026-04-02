@@ -49,19 +49,19 @@ Visual/Audio Guidance: Uses PyQt6 for the UI and Google gTTS for voice instructi
 Safety Shutter: A logic-gate system where the shutter only triggers if the AI confidence score exceeds a specific threshold.
 
 ├── 💻 1. ANA KOD (Dual PC Setup)
-│   ├── UI_Main.py                 # PyQt6 Interface & Patient Registration
-│   ├── IP_Communication.py        # Socket/IP scripts for 2nd PC connection
-│   └── Remote_Error_Display.py    # Error visualization on the linked PC
+│   ├── UI_Main.py
+│   ├── IP_Communication.py
+│   └── Remote_Error_Display.py
 │
 ├── 🛠️ 2. YARDIMCI KOD (Single PC Setup)
-│   ├── Integrated_System.py       # All-in-one execution for local testing
-│   └── MediaPipe_Logic.py         # Skeletal tracking and geometric analysis
+│   ├── Integrated_System.py
+│   └── MediaPipe_Logic.py
 │
 └── 🧠 3. MODELLER
-    ├── YOLOv8_Hand_Wrist/         # Weights (.pt) and anatomical detection models
-    ├── MobileNet_Classifier/      # Image quality (Correct/Blurry/Faulty) models
-    └── Datasets/                  # Annotated Hand & Wrist image collections
-
+    ├── YOLOv8_Hand_Wrist/
+    ├── MobileNet_Classifier/
+    └── Datasets/
+    
     📊 Performance
 The models achieved high accuracy during training:
 
