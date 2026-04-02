@@ -48,3 +48,33 @@ Visual/Audio Guidance: Uses PyQt6 for the UI and Google gTTS for voice instructi
 
 Safety Shutter: A logic-gate system where the shutter only triggers if the AI confidence score exceeds a specific threshold.
 
+├── 💻 1. ANA KOD (Dual PC Setup)
+│   ├── UI_Main.py                 # PyQt6 Interface & Patient Registration
+│   ├── IP_Communication.py        # Socket/IP scripts for 2nd PC connection
+│   └── Remote_Error_Display.py    # Error visualization on the linked PC
+│
+├── 🛠️ 2. YARDIMCI KOD (Single PC Setup)
+│   ├── Integrated_System.py       # All-in-one execution for local testing
+│   └── MediaPipe_Logic.py         # Skeletal tracking and geometric analysis
+│
+└── 🧠 3. MODELLER
+    ├── YOLOv8_Hand_Wrist/         # Weights (.pt) and anatomical detection models
+    ├── MobileNet_Classifier/      # Image quality (Correct/Blurry/Faulty) models
+    └── Datasets/                  # Annotated Hand & Wrist image collections
+
+    📊 Performance
+The models achieved high accuracy during training:
+
+mAP@50: Between 95% - 99% for detection.
+
+Real-world performance: Currently fluctuates around 70% due to background and lighting variations, showing the need for further data augmentation.
+
+⚠️ Current Status & Limitations
+Note: This project is currently in the prototype phase and development has been paused.
+
+Scope: The system is currently functional only for Hand and Wrist X-rays.
+
+Hardware: The prototype uses MediaPipe instead of LIDAR and Arduino instead of Raspberry Pi due to resource constraints.
+
+Dataset: Trained on a controlled dataset of 8 volunteers; needs expansion for clinical reliability.
+
