@@ -53,10 +53,12 @@ Safety Shutter: A logic-gate system where the shutter only triggers if the AI co
 │   ├── IP_Communication.py
 │   └── Remote_Error_Display.py
 │
+
 ├── 🛠️ 2. YARDIMCI KOD (Single PC Setup)
 │   ├── Integrated_System.py
 │   └── MediaPipe_Logic.py
 │
+
 └── 🧠 3. MODELLER
     ├── YOLOv8_Hand_Wrist/
     ├── MobileNet_Classifier/
